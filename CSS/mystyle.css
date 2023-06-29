@@ -1,0 +1,55 @@
+h1{
+    color : purple;
+}
+
+#abc{
+    color : red;
+}
+
+.xyz{
+    color : blue;
+    font-style: italic;
+}
+
+.atoz{
+    color : pink;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*
+*{
+    color:aqua;
+}
+
+body{
+    background-color: aquamarine;
+    background-image: url('C:/Users/DinHar/OneDrive/Pictures/IMG_20180715_200754 - Copy.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+*/
+
+p{
+    border-style :dashed;
+    border-width:thick;
+    border-radius: 20px;
+    font-size:xx-large;
+    color:black;
+    text-shadow: 2px 2px 2px ;
+}
+
+.mydiv{
+    width:50%;
+    color:black;
+    font-size: larger;
+    background-color: aquamarine;
+    border-style: groove;
+    border-color: blue;
+    border-radius: 10px;
+    line-height:40px;
+    height : 300px;
+    overflow:scroll;
+    opacity : 0.5;
+}
+

@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .mybtn {
+            color: brown;
+            background-color: aquamarine;
+            font-style: italic;
+            border-radius: 5px;
+            border-width: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="text-align : center; font-size : 20px;">
+
+        <!--CSS based Inline styling-->
+        <p> Hi this is demo para !</p>
+        <p style="color:red;"> Hi this is demo para !</p>
+        <p style="color:blue;"> Hi this is demo para !</p>
+        <input type="submit" value="Success" class="btn btn-success">
+
+        <!--Bootstrap styling for text color-->
+        <p class="text-primary"> Hi this is demo para !</p>
+        <p class="text-success"> Hi this is demo para !</p>
+        <p class="text-danger"> Hi this is demo para !</p>
+        <p class="text-info"> Hi this is demo para !</p>
+        <p class="text-warning"> Hi this is demo para !</p>
+
+        <!--Bootstrap styling for Background (bg) color-->
+        <p class="bg-primary"> Hi this is demo para !</p>
+        <p class="bg-success"> Hi this is demo para !</p>
+        <p class="bg-danger"> Hi this is demo para !</p>
+        <p class="bg-info"> Hi this is demo para !</p>
+        <p class="bg-warning"> Hi this is demo para !</p>
+
+        <!--Combining the above 2 classes for a single text-->
+        <p class="bg-warning text-primary"> Hi this is demo para !</p>
+
+        <br><br><br>
+
+        <h1>Please Login</h1>
+        UserName : <input type="text"><br><br>
+        Password : <input type="text"><br><br>
+        <!--Internal CSS styling-->
+        <input type="submit" value="CLICK" class="mybtn">
+        <!--Bootstrap styling-->
+        <input type="submit" value="CLICK" class="btn btn-primary btn-sm">
+        <input type="submit" value="CLICK" class="btn btn-secondary btn-xs">
+        <input type="submit" value="CLICK" class="btn btn-success btn-lg">
+        <input type="submit" value="CLICK" class="btn btn-danger btn-md">
+        <input type="submit" value="CLICK" class="btn btn-warning">
+        <input type="submit" value="CLICK" class="btn btn-info">
+        <!--I picked this button tag form the BS website - Tutor is yet to discuss about this-->
+        <button type="submit" class="btn btn-dark">Dark</button>
+        <button type="submit" class="btn btn-link">Link</button>
+        <button type="submit" class="btn btn-success" disabled>Disabled</button>
+
+    </div>
+    div class="col-md-1" style="background-color:pink;">
+        <h1>Hi i am div1</h1><br>
+        <h1 class="col-md-3">Hi i am div1 line2</h1>
+        <h1 class="col-md-4">Hi i am div1 line3</h1>
+        <h1 class="col-md-5">Hi i am div1 line4</h1>
+
+    </div>
+
+    <div class="col-md-4" style="background-color:yellow;">
+        <h1>Hi i am div2</h1>
+    </div>
+
+    <div class="col-md-7" style="background-color:aqua;">
+        <h1>Hi i am div3</h1>
+    </div>
+
+</body>
+
+</html>
