@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form 3</title>
+
+    <style>
+        tr{
+            text-align:left;
+        }
+    </style>
+</head>
+
+<body>
+    <!--HTML form - 3-->
+    <table style="text-align:center;" border="2" cellpadding="1" cellspacing="1">
+        <tr style="background-color:lightblue">
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+
+        <tr>
+            <td>Name</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Sex</td>
+            <td>
+                <input type="radio" name="radiobtn2">Male <br>
+                <input type="radio" name="radiobtn2" checked>Female <br>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Eye Color</td>
+            <td>
+                <select>
+                    <option>green</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Check all that apply</td>
+            <td>
+                <input type="checkbox"> Over 6 feet tall <br>
+                <input type="checkbox"> Over 200 pounds
+            </td>
+        </tr>
+
+        <tr>
+            <td  colspan="2">Describe your athletic ability :
+                <br>
+                <textarea style="width:100%" placeholder="Enter here"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+           <td colspan="2" align="center"><input type="submit" value="Enter my Information"></td> 
+        </tr>
+    </table>
+
+</body>
+
+</html>
