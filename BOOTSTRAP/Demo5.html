@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demo5</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+       .divForms{
+        border-style: dotted;
+        width:50%;
+        margin:auto;
+
+        text-align: center;
+       }
+    </style>
 </head>
 
 <body>
     <!--Progress bars using Bootstrap-->
     <div class="progress">
-        <div class="progress-bar" style="width : 80%; height: 100%;"> 80% </div>
+        <div class="progress-bar" style="width : 80%; height: 100%;" title="80% Complete.."> 80% </div>
     </div>
 
     <div class="progress">
@@ -27,6 +37,38 @@
         <div class="progress-bar progress-bar-primary progress-bar-striped active" style="width : 80%;"> 80% </div><br>
     </div>
 
+    <!--HTML Forms-->
+    <div class="divForms">
+        <h3>HTML Forms</h3>
+        Username : <input type="text"><br>
+        Password : <input type="text"><br>
+        <input type="submit"> <input type="reset">
+    </div>
+
+    <!--HTML Forms + applying bootstrap - step 1-->
+    <div class="divForms">
+        <h3>HTML Forms</h3>
+        <label>Username : </label><input type="text"><br>
+        <label>Password : </label><input type="text"><br>
+        <input type="submit" class="btn btn-success"> <input type="reset" class="btn btn-danger">
+    </div>
+
+    <!--HTML Forms + applying Bootstrap - step 2-->
+    <div class="divForms form-group">
+        <h3>HTML Forms</h3>
+        <label>Username : </label><input type="text" class="form-control"><br>
+        <label>Password : </label><input type="text" class="form-control"><br>
+        <input type="submit" class="btn btn-success"> <input type="reset" class="btn btn-danger">
+    </div>
+
+    <div class="divForms form-inline">
+        <h3>HTML Forms</h3>
+        <label>Username : </label><input type="text" class="form-control"><br>
+        <label>Password : </label><input type="text" class="form-control"><br>
+        <input type="submit" class="btn btn-success"> <input type="reset" class="btn btn-danger">
+    </div>
+    <br>
+    <br>
 </body>
 
 </html>

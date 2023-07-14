@@ -15,49 +15,105 @@
             background-size: cover;
             background-attachment: fixed;
         } */
+        .table,
+        th,
+        td {
+            margin-right: auto;
+            margin-left: auto;
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding-left: 2px;
+        }
+
+        label {
+            width: 100px;
+            clear: right;
+            text-align: left;
+            padding-right: 10px;
+        }
+
+        label,
+        input {
+            float: left;
+        }
     </style>
 </head>
 
 <body>
     <!--HTML forms homework -1 -->
-    <table align="center">
+    <table class="table" cellpadding="3" style="width:40%">
         <tr>
             <th align="right">
-                <a href="">
+                <u>
                     <h3 style="color:brown">Student Registration Form</h3>
-                </a> 
+                </u>
             </th>
         </tr>
 
         <tr style="background-color:lightgrey">
-            <td colspan="10" width="50%">
-                <form style="display:inline-block">
-                    First Name : <input type="text" placeholder="Enter your first name"> <br><br>
-                    Last Name : <input type="text" placeholder="Enter your last name"> <br><br>
-                    <label>Email : </label><input type="email" placeholder="it should contain @..."><br><br>
-                    Mobile : <input type="number" placeholder="only 10 digits are allowed" maxlength="10"><br><br>
-                    Gender : <input type="radio" name="gender">Male
-                    <input type="radio" name="gender">Female <br><br>
-                    Date of Birth : <input type="date"><br><br>
-                    <label for="add">Address : </label><textarea name="add"></textarea><br><br>
-                    City : <input type="text"> <br><br>
-                    Area PIN : <input type="text"> <br><br>
-                    State : <input type="text"> <br><br>
-                    Qualification : <select>
-                        <option>Select Qualification</option>
+            <td>
+                <form style="display: inline">
+                    <label for="fname">First Name</label>
+                    <input type="text" placeholder="Enter your first name" id="fname"> <br><br>
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" placeholder="Enter your last name" id="lname"> <br><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="it should contain @..." id="email"> <br><br>
+
+                    <label for="phone">Mobile</label>
+                    <input type="number" placeholder="only 10 digits are allowed" maxlength="10" id="phone"> <br><br>
+
+                    <label for="genID">Gender</label>
+                    <input type="radio" name="gender" id="genID">Male 
+                    <input type="radio" name="gender" id="genID" checked>Female <br><br>
+
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob"><br><br>
+
+                    <label for="add">Address</label>
+                    <textarea id="add"></textarea> <br><br>
+
+                    <label for="city">City</label>
+                    <input id="city" type="text"> <br><br>
+
+                    <label for="pin">Area PIN</label>
+                    <input id="pin" type="text"> <br><br>
+
+                    <label for="state">State</label>
+                    <input id="state" type="text"> <br><br>
+
+                    <label for="qual">Qualification</label>
+                    <select id="qual">
+                        <option>BTech</option>
+                        <option>MTech</option>
+                        <option>BSc</option>
+                        <option>MSc</option>
+                        <option>Degree</option>
                     </select> <br><br>
-                    Specialization :<br><br>
-                    <input type="checkbox">Computer Science <br><br>
-                    <input type="checkbox">Information Technology <br><br>
-                    <input type="checkbox">Computer Architecture <br><br>
-                    <input type="checkbox">Tele Communication <br><br>
-                    Password : <input type="password"> <br><br>
-                    <input type="submit" value="Registered"
-                        style="border-radius: 5px; background-color: green;text-align: left;">
+
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass"> <br><br>
+
+                    <label>Specialization</label>
+                    <span style="text-align: left;">
+                        <input type="checkbox" id="cse">
+                        <label for="cse">Computer Science</label>
+                        <input type="checkbox" id="mech">
+                        <label for="mech">Mechanical</label>
+                        <input type="checkbox" id="eee">
+                        <label for="eee">Electronics and Electrical</label>
+                    </span>
+                    <br><br>
+
+                    <input type="submit" value="Register" style="background-color:limegreen; 
+                    color:white; font-size:15px ; text-align: left;">
+
                 </form>
             </td>
         </tr>
     </table>
-   </body>
+</body>
 
 </html>
