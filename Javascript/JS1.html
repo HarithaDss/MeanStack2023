@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        document.write("<h1>Welcome to Javascript sessions</h1>");
+
+        //printing multiple times
+        for(i=0 ; i<=5 ; i++){
+            document.write("<h1>Welcome to Javascript sessions</h1>");
+        }
+
+        //Using this function for 'Onclick' operation
+        function abc(){
+            document.write("Button is clicked !!!");
+        }
+
+        //Picking the user details from Forms
+        function bcd(){
+            alert("Fullname entered is : " + document.form.uname.value + document.form.lname.value);
+        }
+
+        //Printing user entered detail in another text field
+        function cde(){
+            document.form.fname.value = document.form.uname.value + " " +
+            document.form.lname.value ;
+        }
+
+        function sum(){
+            document.form.sum1.value =
+            parseInt(document.form.uname.value) +
+            parseInt(document.form.lname.value);
+        }
+    </script>
+
+</head>
+<body style="background-color: peachpuff; text-align:center">
+    <input type="submit" class="btn btn-danger" onclick="alert('Button got clicked')">
+    <input type="submit" class="btn btn-info" onclick="abc()">
+
+    <br><br>
+
+    <form name="form">
+        <label>UserName</label> <input type="text" name="uname"><br>
+        <label>LastName</label> <input type="text" name="lname"><br>
+        <label>FullName</label> <input type="text" name="fname"><br>
+        <label>Sum</label> <input type="text" name="sum1"><br>
+        <input type="submit" value="Submit" onclick="bcd()">
+        <input type="button" value="Click here" onclick="cde()">
+        <input type="button" value="SUM" onclick="sum()">
+    </form>
+    
+</body>
+</html>
