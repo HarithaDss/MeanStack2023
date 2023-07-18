@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS3</title>
+</head>
+
+<body>
+
+</body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        label {
+            width: fit-content;
+            clear: right;
+            /* text-align: left;*/
+            /*I did not find any use with this property - so made it 0 , but still kept it here - for future ref*/
+            padding-right: 0px;
+            float: left;
+            width: 10%;
+        }
+
+        input {
+            float: left;
+            width: 20%;
+        }
+    </style>
+
+    <script>
+        //Picking the detail from 'View Result For' field and using it as argument for calc(value)
+
+        function calc() {
+            //Picking values from all the 6 subject fields
+            s1 = (document.form.maths.value);
+            s2 = parseInt(document.form.soc.value);
+            s3 = parseInt(document.form.sci.value);
+            s4 = parseInt(document.form.eng.value);
+            s5 = parseInt(document.form.hin.value);
+            s6 = parseInt(document.form.tel.value);
+
+            //Calculating their sum and percentage
+            sum = s1 + s2 + s3 + s4 + s5 + s6;
+            percentage = (parseInt(sum) / 600 * 100).toFixed(2);
+
+            document.form.total.value = sum;
+            document.form.percent.value = percentage + "%";
+
+            //Calculating GRADE based on the percentage
+            percentUpdated = parseInt(percentage);
+            if (percentageUpdated >= 80) {
+                grade == "A";
+            }
+            else if (percentageUpdated >= 60 && percentage < 80) {
+                grade == "B";
+            }
+            else if (percentageUpdated >= 40 && percentage < 60) {
+                grade = "C";
+            }
+            else {
+                grade = "D";
+            }
+            document.form.grade.value = grade;
+        }
+    </script>
+</head>
+
+
+<body style="background-color:aquamarine;">
+    <!--June24th class-->
+    <div style="margin-left:10px">
+        <h2>Student report !!</h2>
+        <form name="form" form-group>
+            <label>Mathematics</label> <input type="number" name="maths"> <br><br>
+            <label>Social</label> <input type="number" name="soc"> <br><br>
+            <label>Science</label> <input type="number" name="sci"> <br><br>
+            <label>English</label> <input type="number" name="eng"> <br><br>
+            <label>Hindi</label> <input type="number" name="hin"> <br><br>
+            <label>Telugu</label> <input type="number" name="tel"> <br><br>
+            <h4>******Result Section*******</h4>
+            <label>Total Marks</label> <input type="number" name="total" style="margin-right:20px"> <br><br>
+            <label>Percentage(%)</label> <input type="text" name="percent" style="margin-right:20px"> <br><br>
+            <label>Grade</label> <input type="text" name="grade"> <br><br>
+            <input type="button" value="CALCULATE" onclick="calc()" class="btn btn-primary" style="width:130px;">
+            <input type="reset" value="RESET" class="btn btn-warning" style="width:100px; margin-left:10px;">
+        </form>
+    </div>
+</body>
+
+</html>
+
+</html>

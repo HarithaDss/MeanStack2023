@@ -1,0 +1,216 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS4</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        label {
+            width: fit-content;
+            clear: right;
+            /* text-align: left;*/
+            /*I did not find any use with this property - so made it 0 , but still kept it here - for future ref*/
+            padding-right: 0px;
+            float: left;
+            width: 5%;
+        }
+
+        input {
+            float: left;
+            width: 20%;
+        }
+    </style>
+
+    <script>
+        function abc(){
+            document.form.flname.value = document.form.fname.value + " " + document.form.lname.value;
+        }
+
+        function format(){
+            document.getElementById('fid').style.backgroundColor="pink";
+        }
+
+        function unformat(){
+            document.getElementById('fid').style.backgroundColor="grey";
+        }
+
+        function bgClr(value){
+            document.getElementById('myPage').style.backgroundColor=value;
+        }
+    </script>
+</head>
+
+<body id="myPage" style="background-color:cyan;">
+    <!--24th June class-->
+    <!--HTML Events-->
+    <h2>HTML Events</h2>
+    <!--marquee tag and onMouse events-->
+    <marquee onmouseover="stop()" onmouseout="start()"><h2>This is Marquee text in movement !!</h2></marquee>
+    <form name="form" style="margin-left: 10px;">
+        <!--Single and Double click events-->
+        <label>FirstName</label> <input type="text" name="fname" id = "fid" onfocus="format()" onblur="unformat()"><br><br>
+        <label>LastName</label> <input type="text" name="lname"><br><br>
+        <label>FullName</label> <input type="text" name="flname" onfocus="abc()"><br><br>
+        <input type="button" value="Click" onclick="alert('Button is single clicked !')"  style="width:130px;">
+        <input type="button" value="DoubleClick" 
+        ondblclick="alert('Button is Double clicked !')" style="width:130px; margin-left:10px;"> <br><br>
+        <!--onchange Event-->
+        <label>Choose color</label>
+        <select onchange="bgClr(value)">
+            <option>Choose Color</option>
+            <option value="red">red</option>
+            <option value="cyan">cyan</option>
+            <option value="pink">pink</option>
+            <option value="blue">blue</option>
+            <option value="grey">grey</option>
+        </select>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    </form>
+</body>
+
+</html>

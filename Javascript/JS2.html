@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        label {
+            width: fit-content;
+            clear: right;
+            text-align: left;
+            /*I did not find any use with this property - so made it 0 , but still kept it here - for future ref*/
+            padding-right: 0px;
+            float: left;
+            width: 10%;
+        }
+
+        input {
+            float: left;
+            width: 20%;
+        }
+    </style>
+
+    <script>
+        //Picking the detail from 'View Result For' field and using it as argument for calc(value)
+
+        function calc(value) {
+            a = parseInt(document.form.fNum.value);
+            b = parseInt(document.form.sNum.value);
+            value = document.form.vRes.value;
+
+            if (value == "add") {
+                document.form.Res.value = a + b;
+            }
+            else if (value == "multiply") {
+                document.form.Res.value = a * b;
+            }
+            else if (value == "divide") {
+                document.form.Res.value = a / b;
+            }
+            else if (value == "subtract") {
+                document.form.Res.value = a - b;
+            }
+        }
+    </script>
+</head>
+
+
+<body style="background-color: antiquewhite;">
+    <!--June24th class-->
+    <div style="text-align: left;">
+        <h2>Calculate !!</h2>
+        <form name="form" form-group>
+            <label>Enter first number</label> <input type="text" name="fNum"> <br><br>
+            <label>Enter Second number</label> <input type="text" name="sNum"> <br><br>
+            <label>View Result For</label> <input type="text" name="vRes"> <br><br>
+            <label>Result Here</label> <input type="text" name="Res"> <br><br>
+            <input type="button" value="Calculate" onclick="calc(value)" class="btn btn-primary" style="width:100px;">
+        </form>
+    </div>
+</body>
+
+</html>
