@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS5</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function validation(){
+            uName = document.getElementById('uName').value;
+            // alert("Username entered is : "+ uName);
+            if(uName.length ==0 || uName.length ==null || uName.length == undefined){
+                // alert("Username should be entered");
+                document.getElementById('msg1').innerText = "Username should be entered"
+            }
+            else if (uName.length>0 && uName.length<3){
+                // alert("UserName should hold min 3 characters !")
+                document.getElementById('msg1').innerHTML = "<i style='color:red;'>UserName should hold min 3 characters !</i>"
+            }else if (uName.length >  10){
+                alert("UserName should hold <= 10 characters !")
+            }else{
+                alert("UserName format is correct !")
+            }
+        }
+    </script>
+</head>
+
+<body style="background-color: blanchedalmond; margin-top:20px">
+    <div style="text-align:center;">
+        <h1>Validation Demo</h1>
+        <label>Username :</label> <br>
+        <input type="text" id="uName"> <br>
+        <span id="msg1"></span><br>
+        <input type="button" value="Click" onclick="validation()">
+    </div>
+</body>
+</html>

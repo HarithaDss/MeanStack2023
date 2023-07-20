@@ -42,7 +42,7 @@
 
         function calc() {
             //Picking values from all the 6 subject fields
-            s1 = (document.form.maths.value);
+            s1 = parseInt(document.form.maths.value);
             s2 = parseInt(document.form.soc.value);
             s3 = parseInt(document.form.sci.value);
             s4 = parseInt(document.form.eng.value);
@@ -51,20 +51,19 @@
 
             //Calculating their sum and percentage
             sum = s1 + s2 + s3 + s4 + s5 + s6;
-            percentage = (parseInt(sum) / 600 * 100).toFixed(2);
+            percentage = (sum / 600 * 100).toFixed(2);
 
             document.form.total.value = sum;
             document.form.percent.value = percentage + "%";
 
             //Calculating GRADE based on the percentage
-            percentUpdated = parseInt(percentage);
-            if (percentageUpdated >= 80) {
-                grade == "A";
+            if (percentage >= 80) {
+                grade = "A";
             }
-            else if (percentageUpdated >= 60 && percentage < 80) {
-                grade == "B";
+            else if (percentage >= 60 && percentage < 80) {
+                grade = "B";
             }
-            else if (percentageUpdated >= 40 && percentage < 60) {
+            else if (percentage >= 40 && percentage < 60) {
                 grade = "C";
             }
             else {
