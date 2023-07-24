@@ -9,10 +9,17 @@
         function abc() {
             console.log("Hi this is my first function abc")
         }
-        function bcd(num){
+        function bcd(num) {
             console.log("Hi is my function with parameter : " + num);
         }
-        function employee(firstname, lastname, age, salary){
+        function employee(firstname, lastname, age, salary) {
+            /*This will enable these parameters to become instance variables - they can now
+            be called in any other function as well - like even in abc() or bcd() */
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.age = age;
+            this.salary = salary;
+
             console.log(firstname);
             console.log(lastname);
             console.log(age);
@@ -21,17 +28,22 @@
 
         abc();
         bcd(500);
-        employee("Haritha","Dss",30,3000);
+        employee("Haritha", "Dss", 30, 3000);
 
-        
 
-        
+        function print() {
+            document.getElementById('para1').innerText = "The firstname is : "+ firstname;
+        }
+
     </script>
 
 </head>
 
 <body>
     <h1>Javascript concepts 25th June class</h1>
+    <p id="para1"></p>
+    <input type="button" value="Click" onclick="print()">
+
 </body>
 
 </html>
