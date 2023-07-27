@@ -29,12 +29,17 @@
         abc();
         bcd(500);
         employee("Haritha", "Dss", 30, 3000);
+        employee.prototype.designation = "Software Developer";
+
+        //Creating an obj for this function - else i am unable to use the prototype parameter added
+        const empObj1 = new employee("Haritha", "Dss", 30, 3000);
+
 
 
         function print() {
-            document.getElementById('para1').innerText = "The firstname is : "+ firstname;
+            document.getElementById('para1').innerText = "The firstname is : "+ firstname + " AND " 
+            + "the designation is : "+ empObj1.designation;
         }
-
     </script>
 
 </head>
