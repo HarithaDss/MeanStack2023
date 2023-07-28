@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS9</title>
+</head>
+<body>
+    <p id="para1"></p>
+    <!--25th June class-->
+    <!--Writing the script tag in the BODY section this time-->
+    <script>
+        function webDisplay(){
+            document.getElementById("para1").innerHTML="The sum is :-" + sum;
+        }
+        function sum(num1, num2){
+            sum = num1 + num2;
+            console.log("The sum is :- "+sum);
+            webDisplay(); //Call Back function
+        }
+
+        sum(100,300);
+
+        function logic(){
+            num=document.getElementById("num1").value;
+            if(num%2==0){
+                document.getElementById("para2").innerHTML="<p style='color:red;'>It is Even Number !</p>";
+            }else{
+                document.getElementById("para2").innerHTML="<p style='color : blue;'>It is Odd Number !</p>";
+            }
+        }
+    </script>
+
+    <div>
+        <label>Enter Number :</label><input type="text" id="num1"><br>
+        <input type="submit" onclick="logic()">
+        <p id="para2"></p>
+    </div>
+</body>
+</html>
