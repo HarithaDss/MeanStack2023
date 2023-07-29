@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS10</title>
+
+    <script>
+        //25th June class
+        function stringOpe() {
+            var name = " Har itha ";
+            document.write(name + "<br>");
+
+            document.write(name.toUpperCase() + "<br>");
+            document.write(name.toLowerCase() + "<br>");
+            document.write(name.length + "<br>");
+            
+            document.write(name.concat("Dss") + "<br>");
+            document.write(name.replaceAll(" ", "*") + "<br>");
+
+            flowers = "Rose", "Sunflower", "Lily", "Jasmine";
+            document.write(flowers.length + "<br>");
+            document.write(flowers.slice(6) + "<br>");
+            document.write(flowers.slice(6, 15) + "<br>");
+
+            //Arrays
+            document.write("============ARRAYS===========<br>")
+            const fruits = ["Apple" , "Banana" , "Guava" , "Cherry" , "Plum"];
+            for(var i=0 ; i<fruits.length ; i++){
+                document.write(fruits[i] + "<br>");
+            }
+
+            document.write("============SORT===========<br>")
+            fruits.sort();
+            for(var i=0 ; i<fruits.length ; i++){
+                document.write(fruits[i] + "<br>");
+            }
+
+            document.write("============REVERSE===========<br>")
+            fruits.reverse();
+            for(var i=0 ; i<fruits.length ; i++){
+                document.write(fruits[i] + "<br>");
+            } 
+
+            document.write("============POP===========<br>")
+            var lstFruit = fruits.pop();
+            for(var i=0 ; i<fruits.length ; i++){
+                document.write(fruits[i] + "<br>");
+            } 
+            document.write("Popped out :- " + lstFruit + "<br>");
+
+            document.write("============PUSH===========<br>")
+            fruits.push("Kiwi");
+            for(var i=0 ; i<fruits.length ; i++){
+                document.write(fruits[i] + "<br>");
+            } 
+        }
+
+        stringOpe();
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
