@@ -1,0 +1,47 @@
+div {
+    text-align: center;
+    height: 100%;
+    padding-top: 10px;
+}
+
+/*subBlock1*/
+/*Logo*/
+#snacksImg1 {
+    border-radius: 50%;
+}
+
+/*Unordered List*/
+li {
+    margin: 10px;
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*subBlock2*/
+/*Icon buttons*/
+#subBlock2{
+    text-align:left;
+    padding-top: 70px;
+}
+
+.btnIcon{
+    color:tomato;
+    border : 2px solid red;
+    border-radius: 30px;
+    margin-right:20px;
+}
+
+.btnIcon:hover{
+    text-decoration:underline;
+}
+
+/*subBlock3*/
+#subBlock3{
+    text-align:left;
+    padding-top: 70px;
+}
+ 
+.shortUnderline{
+    
+    
+}
