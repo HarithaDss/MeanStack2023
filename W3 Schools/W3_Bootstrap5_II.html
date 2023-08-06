@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W3_BS5_II</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <!--Bootstrap5 Typography/Text-->
+  <p>Bootstrap uses a default font size of 16px and line-height is 1.5</p>
+
+  <!--Heading elements-->
+  <h1>This is heading 1</h1>
+  <h2>This is heading 2</h2>
+  <h3>This is heading 3</h3>
+  <h4>This is heading 4</h4>
+  <h5>This is heading 5</h5>
+  <h6>This is heading 6</h6>
+
+  <!--Heading classes to other tags-->
+  <p class="h1">This is a para line enabled with h1</p>
+  <p class="h2">This is a para line enabled with h2</p>
+  <p class="h3">This is a para line enabled with h3</p>
+  <p class="h4">This is a para line enabled with h4</p>
+  <p class="h5">This is a para line enabled with h5</p>
+  <p class="h6">This is a para line enabled with h6</p>
+
+  <!--Display heading classes-->
+  <p class="display-1">This is display heading 1</p>
+  <p class="display-2">This is display heading 2</p>
+  <p class="display-3">This is display heading 3</p>
+  <p class="display-4">This is display heading 4</p>
+  <p class="display-5">This is display heading 5</p>
+  <p class="display-6">This is display heading 6</p>
+
+  <!--small element or small class-->
+  <div class="container-md">
+    <p class="small">This is a para line enabled with .small</p>
+    <h2>This heading <small class="bg-secondary">has a small text also</small> included</h2>
+    <!--mark element-->
+    <p>This paragraph line has a <mark>small text highlighted</mark> in it</p>
+    <!--abbr element-->
+    <p>The <abbr title="World Health Organisation">WHO</abbr> has a great contribution towards global wellness and
+      health</p>
+    <!--initialism class-->
+    <p>The <abbr title="World Health Organisation" class="initialism">WHO</abbr> has a great contribution towards global
+      wellness and
+      health</p>
+    <!--Blockquote-->
+    <p class="bg-secondary">The below text is derived from this statement source :</p>
+    <blockquote class="blockquote">For 50 years, WWF has been protecting the future of nature.
+      The world's leading conservation organization, WWF works in 100 countries and is
+      supported by 1.2 million members in the United States and close to 5 million globally.</blockquote>
+    <footer class="blockquote-footer">From WWF's website</footer>
+    <!--dl-->
+    <p>BS5 styles the description lists in a certain manner:</p>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+    <!--code and kbd (keyboard)-->
+    <p>The basic HTML elements which form the structure of the page are <code>html</code>,
+      <code>head</code> and <code>body</code> !
+    </p>
+
+    <p>We can type <kbd>Alt+Shift+F</kbd> to align all the code in a html file</p>
+
+    <!--pre-->
+    <pre>
+      Text in a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks.</pre>
+
+    <!--lead class-->
+    <p class="lead">BS5 says a paragraph can stand out using the .lead class.
+      This para line has lead class applied.
+    </p>
+    <!--alignment-->
+    <p class="text-start">This is left aligned text</p>
+    <p class="text-end">This is right aligned text</p>
+    <p class="text-center">This is center aligned text</p>
+    <!--This wraps and hols the text within the container-->
+    <p class="text-break">
+      AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTt
+      UuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOo
+      PpQqRrSsTtUuVvWwXxYyZzhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTt
+      UuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOo
+      PpQqRrSsTtUuVvWwXxYyZz
+    </p>
+    <!--Using '.text-nowrap' will make the text overflow the container's width-->
+    <p class="text-nowrap">
+      AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTt
+      UuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOo
+      PpQqRrSsTtUuVvWwXxYyZzhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTt
+      UuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOo
+      PpQqRrSsTtUuVvWwXxYyZz
+    </p>
+
+    <a href="#">This is a hyperlink with underline</a><br>
+    <a href="#" class="text-decoration-none">This is a hyperlink without underline</a>
+
+    <p class="text-lowercase">this is lowercase text</p>
+    <p class="text-uppercase">this is uppercase text</p>
+    <p class="text-capitalize">this text is capitalized</p>
+
+     <!--Lists-->
+     <p>The class .list-unstyled removes the default list-style and left margin on list items (immediate children only):</p>
+     <ul class="list-unstyled">
+       <li>Coffee</li>
+       <li>Tea
+         <ul>
+           <li>Black tea</li>
+           <li>Green tea</li>
+         </ul>
+       </li>
+       <li>Milk</li>
+     </ul>
+
+     <p>The class .list-inline places all list items on a single line, when used together with the .list-inline-item:</p>
+     <ul class="list-inline">
+       <li class="list-inline-item">Coffee</li>
+       <li class="list-inline-item">Tea</li>
+       <li class="list-inline-item">Milk</li>
+     </ul>
+  </div>
+
+ 
+
+
+
+</body>
+
+</html>

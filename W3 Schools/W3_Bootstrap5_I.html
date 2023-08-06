@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W3_BS5_I</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <!--BS5 CONTAINERS-->
+  <!--Fixed container width BS class-->
+  <div class="container bg-secondary">
+    <h2>Bootstrap5 - fixed container width</h2>
+  </div>
+  <!--Full container width BS class-->
+  <div class="container-fluid bg-secondary">
+    <h2>Bootstrap5 - Full container width</h2>
+  </div>
+  <!--Container padding-->
+  <div class="container bg-secondary pt-5">
+    <h2>Bootstrap5 - fixed container width</h2>
+  </div>
+</body>
+<!--Container border and color-->
+<div class="container p-5 my-5 border">
+  <h2>Bootstrap5 - fixed container width</h2>
+</div>
+
+<div class="container p-3 my-3 bg-dark text-white">
+  <h2>Bootstrap5 - fixed container width</h2>
+</div>
+
+<div class="container p-1 my-1 bg-primary text-white">
+  <h2>Bootstrap5 - fixed container width</h2>
+</div>
+<!--Responsive Containers-->
+<div class="container-sm border">.container-sm</div>
+<div class="container-md mt-3 border">.container-md</div>
+<div class="container-lg mt-3 border">.container-lg</div>
+<div class="container-xl mt-3 border">.container-xl</div>
+<div class="container-xxl mt-3 border">.container-xxl</div>
+
+<!--BS5 GRID SYSTEM-->
+<div class="container-fluid mt-3">
+  <h3>Three equal width columns</h3>
+  <div class="row">
+    <!--Reduce the window size to max possible, these 3 blocks will stay beside each other in the same row
+    even in the xs size-->
+    <div class="col p-3 bg-primary text-white">.col</div>
+    <div class="col p-3 bg-dark text-white">.col</div>
+    <div class="col p-3 bg-primary text-white">.col</div>
+  </div>
+
+  <h3>Three equal width responsive columns</h3>
+  <div class="row">
+     <!--These blocks will show one below the other(3 diff rows) for xs and sm size , from md they will show beside each 
+    other in the same row-->
+    <div class="col-md p-3 bg-primary text-white">.col</div>
+    <div class="col-md p-3 bg-dark text-white">.col</div>
+    <div class="col-md p-3 bg-primary text-white">.col</div>
+  </div>
+
+  <div class="row">
+    <!--Unequal responsive columns-->
+   <div class="col-sm-3 p-3 mt-3 bg-primary text-white">.col</div>
+   <div class="col-sm-6 p-3 mt-3 bg-dark text-white">.col</div>
+   <div class="col-sm-3 p-3 mt-3 bg-primary text-white">.col</div>
+  </div>
+
+
+</div>
+</html>

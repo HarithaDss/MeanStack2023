@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>itemsPage</title>
+    <title>Snacks Point</title>
 
     <!--External CSS reference-->
     <link href="itemsPage.css" rel="stylesheet">
@@ -15,27 +15,24 @@
 
 
 </head>
-<!--This page contains layout design using CSS mostly - i designed this with my understanding so far-->
+<!--This file has the layout designed using Bootstrap mostly - taken reference from the sample proj shared
+by Simplilearn-->
 <body style="background-color: gainsboro;">
     <div class="row" class="mainBlock1">
-        <!--I divided the page into 3 lengthy columns using Bootstrap grid system (col-md-3, col-md-6,col-md-3)
-        I am then including all the content separately into each of these div blocks-->
-        <div class="col-md-3" id="subBlock1">
+       <!--Left Sidebar-->
+        <div class="col-md-2" id="subBlock1">
             <img id="snacksImg1" src="./Pictures/Snacks Point logo.png" alt="Snacks Point Logo" width="150px"
                 height="150px">
 
-            <ul style="list-style-type: none; text-align: left;font-size:xx-large;">
-                <li>About</li>
-                <li>Services</li>
-                <li>Your Orders</li>
-                <li>Wishlists</li>
-                <li>Cart</li>
-                <li>Contact</li>
-                <li>Checkout</li>
-                </ol>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
         </div>
 
-        <div class="col-md-6" id="subBlock2">
+        <!--Main Container-->
+        <div class="col-md-7" id="subBlock2">
             <a href="https://www.google.com"><button class="btnIcon"><i class="fa fa-search"></i> Search</button></a>
             <a href="https://www.google.com"><button class="btnIcon"><i class="fa fa-tag"></i> Offer</button></a>
             <a href="https://www.google.com"><button class="btnIcon"><i class="fa fa-shopping-cart"></i> 2
@@ -44,6 +41,7 @@
             <h2 style="color:orange; margin-top: 10px;">Pizza</h2>
         </div>
 
+        <!--Right side bar-->
         <div class="col-md-3" id="subBlock3" style="background-color: aquamarine;">
             <a href="https://www.simplilearn.com"><button class="btnIcon"><i class="fa fa-user-circle-o"
                         style="color:red"></i>
